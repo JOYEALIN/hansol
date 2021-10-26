@@ -35,6 +35,11 @@
             font-weight:300;
             font-size:14px;
         }
+        .scnone{
+            width:0;
+            height:0;
+            overflow:hidden;
+        }
 
         .skip-menu a{
             padding:1em 2em;
@@ -230,6 +235,291 @@
             transform-origin:left bottom;
             width:36px;
         }
+
+        .main-banner{
+            padding-top:69px;
+        }
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+            bottom:30px;            
+            left:10%;
+            right:10%;
+            width:auto;
+        }
+        
+        .swiper-pagination .swiper-pagination-bullet{
+            width:20%;
+            height:1px;
+            margin:0 !important;
+            border-radius:0;
+            background-color:#fff;
+            opacity:1;
+        }
+        .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            height:3px;
+            background-color:#017ec6;
+        }
+        .swiper-slide-name{
+            position:absolute;
+            left:10%;
+            right:10%;
+            bottom:12px;
+            display:flex;
+            z-index:99997;
+            font-size:12px;
+        }
+        .swiper-slide-name span{
+            flex:1;
+            text-align:center;
+            cursor:pointer;
+            color:#fff;
+            font-weight:500;
+        }
+        .swiper-slide-name span.active{
+            color:#017ec6;
+        }
+        .link-slide{
+            padding-right:30px;
+            color:#666;
+            position:absolute;
+            left:16%;
+            top:50%;
+            z-index:99996;
+            font-size:10px;
+        }
+        .link-slide::before,.link-slide::after{
+            content:'';
+            display:block;
+            width:16px;
+            height:16px;            
+            background-color:#666;
+            position:absolute;
+            right:6px;
+            top:50%;
+            transform:translate(0,-50%) rotate(45deg);
+        }
+        .link-slide::before{
+            border-radius:50%;
+            right:-0px;
+            cursor:pointer;
+        }
+        .link-slide::after{
+            width:8px;
+            height:8px;
+            border-top:2px solid #fff;
+            border-right:2px solid #fff;
+            background-color:transparent;
+        }
+        .swiper-button-prev,.swiper-button-next{
+            display:none;
+        }
+
+        .swiper02{
+            padding-top:200px;
+            padding-bottom:200px;
+        }
+       
+        .swiper02 img{
+            width:auto;
+            height:80vw;      
+            display:block;
+            margin:0 auto;      
+        }
+        .swiper02 .swiper-pagination{
+            bottom:12px !important;
+        }
+        .swiper02 .swiper-pagination .swiper-pagination-bullet{
+            width:6px;
+            height:6px;
+            margin:0 3px !important;
+            border-radius:50%;
+        }
+        .sub-banner-txt{            
+            display:flex;
+            align-items:center;            
+        }
+        .sub-banner-txt .sub-banner-slide-top{            
+            font-weight:900;
+            font-size:46px;
+            position:absolute;
+            left:20px;
+            right:20px;
+            top:-34;
+            z-index:99996;
+        }
+        .sub-banner-txt::after{
+            content:'';
+            display:none;
+            height:2px;
+            background-color: #000;                                
+        }
+        .sub-banner-txt p{    
+            position:absolute;
+            left:20px;
+            right:20px;
+            top:78vw;
+            z-index:99996;   
+        }
+        .sub-banner-txt p::before{
+            content:'한솔제지 소개';
+            display:block;
+            width:160px;
+            margin-bottom:20px;
+            padding:10px;
+            background-color:#000;
+            color:#fff;
+            text-align:center;
+        }
+        .sub-banner-txt p::after{
+            content:'초대 문화부 장관 이어령, 한솔 40년 사사 축사 중';
+            display:block;
+            padding-top:14px;
+            font-size:12px;
+            color:#999;
+        }
+
+
+
+
+
+
+
+        @media(min-width:540px){
+            .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+                bottom:40px;                            
+            }
+            .swiper-slide-name{
+                bottom:20px;
+            }
+            .link-slide{
+                font-size:12px;
+            }
+            .link-slide::before{
+                width:18px;
+                height:18px;
+            }
+            .link-slide::after{
+                width:9px;
+                height:9px;
+            }
+            .swiper02 .swiper-pagination{
+                bottom:20px !important;
+            }
+            .swiper02 .swiper-pagination .swiper-pagination-bullet{
+                width:10px;
+                height:10px;
+                margin:0 5px !important;                
+            }
+        }
+        @media(min-width:960px){
+            .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+                bottom:60px;                            
+            }
+            .swiper-slide-name{
+                bottom:40px;
+                font-size:14px;
+            }
+            .link-slide{
+                font-size:14px;
+            }
+            .link-slide::before{
+                width:22px;
+                height:22px;
+            }
+            .link-slide::after{
+                width:11px;
+                height:11px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+        @media(min-width:1200px){
+            .header{
+                position:static;
+            }
+            .header .container{
+                padding:14px 0;
+            }
+            .header .nav{
+                padding:0;
+                background-color:transparent;
+                display:flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                position:static;
+                transform:translate(0,0);
+                transition:none;
+            }
+            .main-nav>li{
+                padding:0 0.5em;
+                display:inline-block;
+            }
+            .main-nav>li>a{
+                display:inline;                
+            }
+            .main-nav a{
+                color:#333;
+            }
+            .main-nav>li>a::after{
+                display:none;
+            }
+            .sub-nav{
+                position:static;
+                justify-content:flex-end;
+            }
+            .sub-nav li{
+                margin-right:0;
+                margin-left:1em;
+            }
+            .sub-nav li:first-child{
+                line-height:10px;
+            }
+            .sub-nav li:first-child a{
+                color:#999;
+            }
+            .btn-nav{
+                display:none;
+            }
+
+            .main-banner{
+                padding-top:0;
+            }
+            .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+                bottom:80px;                            
+            }
+            .swiper-slide-name{
+                bottom:60px;
+                font-size:14px;
+            }
+            .link-slide{
+                font-size:18px;
+            }
+            .link-slide::before{
+                width:26px;
+                height:26px;
+            }
+            .link-slide::after{
+                width:13px;
+                height:13px;
+            }
+            .swiper-button-prev,.swiper-button-next{
+                display:block;
+            }
+            .swiper02 .swiper-pagination{
+                bottom:28px !important;
+            }
+            .swiper02 .swiper-pagination .swiper-pagination-bullet{
+                width:14px;
+                height:14px;
+                margin:0 7px !important;                
+            }
+        }
     </style>    
 </head>
 <body>
@@ -323,8 +613,8 @@
         </header>
         <section class="section main-banner">
             <div class="container">
-                <h2>매인 배너</h2>
-                <div class="swiper">
+                <h2 class="scnone">매인 배너</h2>
+                <div class="swiper swiper01">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="img-box">
@@ -379,13 +669,14 @@
 
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+
                 </div>
             </div>
         </section>
         <section class="section sub-banner">
             <div class="container">
-                <h2>서브 배너</h2>
-                <div class="swiper">
+                <h2 class="scnone">서브 배너</h2>
+                <div class="swiper swiper02">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="sub-banner-txt">
@@ -424,9 +715,7 @@
                             <div class="img-box"><img src="./images/img-sub03.jpg" alt="축사이미지3"></div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>                    
                 </div>
             </div>
         </section>
@@ -500,7 +789,8 @@
     
     <script>
         $(function(){
-            
+            let idxNum = 0;
+            $('.swiper-slide-name span').eq(idxNum).addClass('active')
 
             $('#btn-nav').on({
                 'click':function(){
@@ -517,6 +807,48 @@
                     $('.main-nav>li').not(this).removeClass('active');
                 }
             });
+
+            const swiper = new Swiper('.swiper01',{
+                loop:true,
+                autoplay: {
+                    delay: 3000,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },  
+                on:{
+                    slideChange:function(){
+                        // idxNum=this.activeIndex;
+                        for(let cnt=0;cnt<5;cnt++){
+                            if($('.swiper-pagination-bullet').eq(cnt).hasClass('swiper-pagination-bullet-active')){
+                                idxNum = $('.swiper-pagination-bullet').eq(cnt).index(); 
+                                console.log(idxNum);
+                            }
+                        }
+                        $('.swiper-slide-name span').removeClass('active');
+                        $('.swiper-slide-name span').eq(idxNum).addClass('active');
+                    }
+                }              
+            });
+
+            const swiper2 = new Swiper('.swiper02',{
+                loop:true,
+                autoplay:{
+                    delay:3500
+                },
+                pagination:{
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                }
+
+            });
+
+            $('.sub-banner-txt').prepend('<div class="sub-banner-slide-top">한솔제지는<br>국내 제지산업의<br>중심입니다.</div>')
         })
     </script>
 </body>
